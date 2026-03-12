@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kavach Shield - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      🛡️ Kavach Shield
+    </div>
+    <div class="navbar-right">
+      <div class="notification">
+        🔔
+        <span class="notification-badge">3</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <div style="width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg, #FF6B35, #FFB703); display: flex; align-items: center; justify-content: center;">👤</div>
+        <span>Profile</span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul class="sidebar-menu">
+        <li>
+          <a href="index.html" class="active">
+            <span>📊</span>
+            <span class="sidebar-text">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="analyze-message.html">
+            <span>💬</span>
+            <span class="sidebar-text">Analyze Message</span>
+          </a>
+        </li>
+        <li>
+          <a href="check-url.html">
+            <span>🔗</span>
+            <span class="sidebar-text">Check URL</span>
+          </a>
+        </li>
+        <li>
+          <a href="alerts.html">
+            <span>⚠️</span>
+            <span class="sidebar-text">Alerts</span>
+          </a>
+        </li>
+        <li>
+          <a href="settings.html">
+            <span>⚙️</span>
+            <span class="sidebar-text">Settings</span>
+          </a>
+        </li>
+        <li class="sidebar-logout">
+          <a href="#">
+            <span>🚪</span>
+            <span class="sidebar-text">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1 style="margin-bottom: 0.5rem;">Dashboard</h1>
+      <p style="color: #ccc; margin-bottom: 2rem;">Real-time fraud detection overview</p>
+
+      <!-- Stats Grid -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-content">
+            <p style="color: #ccc; font-size: 0.9rem;">Threats Detected</p>
+            <h3>1,247</h3>
+            <p class="stat-trend up">↑ 12% from last week</p>
+          </div>
+          <div class="stat-icon primary">⚠️</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-content">
+            <p style="color: #ccc; font-size: 0.9rem;">Users Protected</p>
+            <h3>5,893</h3>
+            <p class="stat-trend">↓ 5% from last week</p>
+          </div>
+          <div class="stat-icon success">🛡️</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-content">
+            <p style="color: #ccc; font-size: 0.9rem;">URLs Checked</p>
+            <h3>3,421</h3>
+            <p class="stat-trend up">↑ 8% from last week</p>
+          </div>
+          <div class="stat-icon warning">🔗</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-content">
+            <p style="color: #ccc; font-size: 0.9rem;">Messages Analyzed</p>
+            <h3>12,543</h3>
+            <p class="stat-trend up">↑ 15% from last week</p>
+          </div>
+          <div class="stat-icon primary">💬</div>
+        </div>
+      </div>
+
+      <!-- Recent Alerts -->
+      <div class="glass-card">
+        <h2 style="margin-bottom: 1.5rem;">⚠️ Recent Alerts</h2>
+
+        <div class="alert critical">
+          <div class="alert-icon">🔴</div>
+          <div class="alert-content">
+            <h4>Suspicious UPI Payment Request</h4>
+            <p>Fake payment request impersonating your bank</p>
+            <div class="alert-tags">
+              <span class="alert-tag">Phishing</span>
+              <span class="alert-tag">Hindi</span>
+              <span class="alert-tag">2 min ago</span>
+            </div>
+          </div>
+          <div class="alert-actions">
+            <button title="Archive">📁</button>
+            <button title="Delete">🗑️</button>
+          </div>
+        </div>
+
+        <div class="alert high">
+          <div class="alert-icon">🟠</div>
+          <div class="alert-content">
+            <h4>Fake Police Threat</h4>
+            <p>Warning about fake legal notice claiming police authority</p>
+            <div class="alert-tags">
+              <span class="alert-tag">Digital Arrest</span>
+              <span class="alert-tag">Tamil</span>
+              <span class="alert-tag">5 min ago</span>
+            </div>
+          </div>
+          <div class="alert-actions">
+            <button title="Archive">📁</button>
+            <button title="Delete">🗑️</button>
+          </div>
+        </div>
+
+        <div class="alert high">
+          <div class="alert-icon">🟠</div>
+          <div class="alert-content">
+            <h4>Known Phishing Domain Detected</h4>
+            <p>Link contains malware from known phishing database</p>
+            <div class="alert-tags">
+              <span class="alert-tag">Malicious Link</span>
+              <span class="alert-tag">Bengali</span>
+              <span class="alert-tag">12 min ago</span>
+            </div>
+          </div>
+          <div class="alert-actions">
+            <button title="Archive">📁</button>
+            <button title="Delete">🗑️</button>
+          </div>
+        </div>
+
+        <a href="alerts.html" style="display: inline-block; margin-top: 1rem; color: #FF6B35; text-decoration: none; font-weight: 500;">View All Alerts →</a>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="glass-card">
+        <h2 style="margin-bottom: 1.5rem;">Quick Actions</h2>
+        <div class="quick-actions">
+          <a href="analyze-message.html" class="btn btn-primary">Analyze Message</a>
+          <a href="check-url.html" class="btn btn-secondary">Check URL</a>
+          <a href="alerts.html" class="btn btn-success">Report Scam</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
